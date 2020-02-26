@@ -21,4 +21,18 @@
 (define (sqrt x)
   (try 1.0 x))
 
-(sqrt 100.0)
+#| (sqrt 100.0) |#
+
+(define (plus x y)
+  (if (= x 0)
+    y
+    (plus (- x 1) (+ y 1))))
+
+#| (plus 3 4) |#
+
+#| 1.2.1 |#
+(define (factorial n)
+  (if (= n 1)
+    1
+    (* n (factorial (- n 1)))))
+(factorial 6)
