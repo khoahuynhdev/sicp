@@ -5,6 +5,8 @@
 (define (+ a b)
 (if (= a 0) b (+ (dec a) (inc b))))
 
+; using substitution model
+
 ; 1
 (+ 4 5)
 (inc (+ 3 5))
