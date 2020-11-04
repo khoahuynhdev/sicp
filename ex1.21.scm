@@ -1,5 +1,7 @@
+(define (square n)
+  (* n n))
 (define (find-divisor n test-divisor)
-  (cond ((> (sqrt test-divisor) n) n)
+  (cond ((> (square test-divisor) n) n)
 	((divide? test-divisor n) test-divisor)
 	(else (find-divisor n (+ test-divisor 1)))))
 
